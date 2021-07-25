@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .search_container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: #000000;
+        padding: 10px;
+        color: #ffffff;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel wimbledon</title>
+</head>
+<body>
+    
+
+
+<div class="header">
+    <nav>
+        <a href="./index.html"> <img src="logo.png" alt=""></a>
+        <a href="./index.html">inicio</a>
+        <a href="./habitaciones.html">habitaciones</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./reservar.html">Reservar</a>
+        <a href="./contactanos.html">Contactanos</a>
+        <a href="https://www.facebook.com/Hotel.Wimbledon/"><img src="icons8-facebook-logo.svg" alt="icono de facebook"></a>
+        <a href="#"><img src="icons8-instagram-logo.svg" alt="icono de facebook"></a>
+        <a href="#"><img src="icons8-youtube-play-button.svg" alt="icono de facebook"></a>
+    </nav> 
+</div>
+<div> 
+<img src="opening_door.jpg" alt="">
+</div>
+
+
+
+
+<div class="search_container">
+    <div>
+    <h3>Fecha de entrada</h3>
+    <input type="date" id="start" name="trip-start"
+    value="2018-07-22"
+    min="2018-01-01" max="2018-12-31">
+    </div>
+
+
+    <div>
+    <h3>Fecha de salida</h3>
+        <input type="date" id="start" name="trip-start"
+        value="2018-07-22"
+        min="2018-01-01" max="2018-12-31">
+    </div>
+    
+    <div>
+        <h3> Habitación</h3>
+        <select name="cars" id="cars">
+            <option value="volvo">Jacuzzi deluxe</option>
+            <option value="saab">Romantic bed</option>
+            <option value="mercedes">Simple deluxe</option>
+            <option value="audi">just bed</option>
+          </select>
+    </div>
+
+    <div>   
+        <h3>Buscar</h3>
+        <input type="button" id="search" value="search">
+    </div>
+</div>
+
+<div class="carrusel">
+
+    <div>   <img src="room1.jpg" alt="primera habitacion"></div>
+
+
+</div>
+
+<div>   
+    <video width="640" height="480" autoplay muted loop>
+        <source src="COUPLE_ON_BED.mp4" type="video/mp4">
+      </video>
+</div>
+
+</body>
+</html>
