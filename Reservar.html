@@ -5,96 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel wimbledon</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
     <body>
-
-        <HEADER>
+        <header>
             <div class="header_container">
                 <nav>
-                    <a href="./index.html"> <img src="./media/imagenes/logo.png" alt=""></a>
-                    <a href="./index.html">Inicio</a>
-                    <a href="./Habitaciones.html">Habitaciones</a>
-                    <a href="./Nosotros.html">Nosotros</a>
-                    <a href="./Reservar.html">Reservar</a>
-                    <a href="./Contactanos.html">Contáctanos</a>
-                    <a href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
-                    <a href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a>
-                    <a href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a>
+                    <ul>
+                        <li><a class="menuList" class="menuList" href="./index.html"> <img src="./media/imagenes/logo.png" alt=""></a></li>
+                        <li><a class="menuList" href="./index.html">Inicio</a>
+                        <li><a class="menuList" href="./Habitaciones.html">Habitaciones</a></li>
+                        <li><a class="menuList" href="./Nosotros.html">Nosotros</a></li>
+                        <li><a class="menuList" href="./Reservar.html">Reservar</a></li>
+                        <li><a class="menuList" href="./Contactanos.html">Contáctanos</a></li>
+                        <li><a class="social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a></li>
+                        <li><a class="social" href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a></li>
+                        <li><a class="social" href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a></li>
+                    </ul>
                 </nav> 
             </div>
-        </HEADER>
+        </header>
     
-        <div> 
-            <img src="./media/imagenes/opening_door.jpg" alt="">
-        </div>
-    
-        <section>
-            <div class="search_container">
-                <div>
-                <h3>Fecha de entrada</h3>
-                <input type="date" id="start" name="trip-start"
-                value="2018-07-22"
-                min="2018-01-01" max="2018-12-31">
-                </div>
+        <main>
+            <div> 
+                <img src="./media/imagenes/opening_door.jpg" alt="">
             </div>
-    
-            <div>
-                <h3>Fecha de salida</h3>
+        
+            <section>
+                <div class="search_container">
+                    <div>
+                    <h3>Fecha de entrada</h3>
                     <input type="date" id="start" name="trip-start"
                     value="2018-07-22"
                     min="2018-01-01" max="2018-12-31">
-            </div>
-            
+                    </div>
+                </div>
+        
+                <div>
+                    <h3>Fecha de salida</h3>
+                        <input type="date" id="start" name="trip-start"
+                        value="2018-07-22"
+                        min="2018-01-01" max="2018-12-31">
+                </div>
+                
+                <div>
+                    <h3> Habitación</h3>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Jacuzzi deluxe</option>
+                        <option value="saab">Romantic bed</option>
+                        <option value="mercedes">Simple deluxe</option>
+                        <option value="audi">just bed</option>
+                    </select>
+                </div>
+        
+                <div>   
+                    <h3>Ver disponibilidad</h3>
+                    <input type="button" id="search" value="BUSCAR">
+                </div>
+            </section>
+
             <div>
-                <h3> Habitación</h3>
-                <select name="cars" id="cars">
-                    <option value="volvo">Jacuzzi deluxe</option>
-                    <option value="saab">Romantic bed</option>
-                    <option value="mercedes">Simple deluxe</option>
-                    <option value="audi">just bed</option>
-                </select>
+                <div>   <img src="./media/imagenes/room1.jpg" alt="primera habitacion"></div>
+                <div>   <h3>Jacuzzi deluxe</h3></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem numquam voluptatum placeat cupiditate qui ducimus laudantium corrupti earum magni fuga veritatis animi voluptas quibusdam, cum dolor quia quod quae consequatur nam porro eaque? Amet ipsum repellat repudiandae! Corporis, autem ipsum! Illo molestias natus quasi aut quod delectus pariatur dolorum et maxime alias.</p>
+                
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 5</li>
+                </ol>
+
+                <input type="button" id="RESERVA" value="RESERVAR">
             </div>
-    
-            <div>   
-                <h3>Ver disponibilidad</h3>
-                <input type="button" id="search" value="BUSCAR">
+
+            <div>
+                <div>   <img src="./media/imagenes/room1.jpg" alt="primera habitacion"></div>
+                <div>   <h3>Jacuzzi deluxe</h3></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem numquam voluptatum placeat cupiditate qui ducimus laudantium corrupti earum magni fuga veritatis animi voluptas quibusdam, cum dolor quia quod quae consequatur nam porro eaque? Amet ipsum repellat repudiandae! Corporis, autem ipsum! Illo molestias natus quasi aut quod delectus pariatur dolorum et maxime alias.</p>
+                
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 5</li>
+                </ol>
+
+                <input type="button" id="RESERVA" value="RESERVAR">
             </div>
-        </section>
 
-        <div>
-            <div>   <img src="./media/imagenes/room1.jpg" alt="primera habitacion"></div>
-            <div>   <h3>Jacuzzi deluxe</h3></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem numquam voluptatum placeat cupiditate qui ducimus laudantium corrupti earum magni fuga veritatis animi voluptas quibusdam, cum dolor quia quod quae consequatur nam porro eaque? Amet ipsum repellat repudiandae! Corporis, autem ipsum! Illo molestias natus quasi aut quod delectus pariatur dolorum et maxime alias.</p>
-            
-            <ol>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-                <li>Elemento 4</li>
-                <li>Elemento 5</li>
-            </ol>
-
-            <input type="button" id="RESERVA" value="RESERVAR">
-        </div>
-
-        <div>
-            <div>   <img src="./media/imagenes/room1.jpg" alt="primera habitacion"></div>
-            <div>   <h3>Jacuzzi deluxe</h3></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem numquam voluptatum placeat cupiditate qui ducimus laudantium corrupti earum magni fuga veritatis animi voluptas quibusdam, cum dolor quia quod quae consequatur nam porro eaque? Amet ipsum repellat repudiandae! Corporis, autem ipsum! Illo molestias natus quasi aut quod delectus pariatur dolorum et maxime alias.</p>
-            
-            <ol>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-                <li>Elemento 4</li>
-                <li>Elemento 5</li>
-            </ol>
-
-            <input type="button" id="RESERVA" value="RESERVAR">
-        </div>
-
-
-    <footer>    
+        </main>
+        <footer>    
 
             <div class="container_footer"> 
                 <img src="./media/imagenes/logo.png" alt="">     
@@ -102,14 +106,14 @@
 
 
             <div class="container_footer">
-                <div><a href="#"></a>SERVICIOS</div>
-                <div><a href="#"></a>POLITICA</div>
-                <div><a href="#"></a>RESTRICCIONES</div</>
+                <div><a href="#">SERVICIOS</a></div>
+                <div><a href="#">POLITICA</a></div>
+                <div><a href="#">RESTRICCIONES</a></div</>
             </div>
 
             <div class="container_footer"> 
-                <div><a href="#"></a>CONTÁCTANOS</div>
-                <div><a href="#"></a>LIBRO DE RECLAMACIONES</div>
+                <div><a href="#">CONTÁCTANOS</a></div>
+                <div><a href="#">LIBRO DE RECLAMACIONES</a></div>
             </div>
 
             <div CLASS="social_footer">
@@ -117,8 +121,8 @@
                 <a href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de facebook"></a>
                 <a href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de facebook"></a>
             </div>
-            <P>Todos los derechos reservados www.HotelWimbledon.com ©</P>
-    </footer>
+            <P id="Derechos">Todos los derechos reservados www.HotelWimbledon.com ©</P>
+        </footer>
 
     </body>
 </html>

@@ -5,111 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel wimbledon</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
     <body>
-        <HEADER>
-        <div class="header_container">
-            <nav>
-                <a href="./index.html"> <img src="./media/imagenes/logo.png" alt=""></a>
-                <a href="./index.html">Inicio</a>
-                <a href="./Habitaciones.html">Habitaciones</a>
-                <a href="./Nosotros.html">Nosotros</a>
-                <a href="./Reservar.html">Reservar</a>
-                <a href="./Contactanos.html">Contáctanos</a>
-                <a href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
-                <a href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a>
-                <a href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a>
-            </nav> 
-        </div>
-        
-        </HEADER>
+        <header>
+            <div class="header_container">
+                <nav>
+                    <ul>
+                        <li><a class="menuList" class="menuList" href="./index.html"> <img src="./media/imagenes/logo.png" alt=""></a></li>
+                        <li><a class="menuList" href="./index.html">Inicio</a>
+                        <li><a class="menuList" href="./Habitaciones.html">Habitaciones</a></li>
+                        <li><a class="menuList" href="./Nosotros.html">Nosotros</a></li>
+                        <li><a class="menuList" href="./Reservar.html">Reservar</a></li>
+                        <li><a class="menuList" href="./Contactanos.html">Contáctanos</a></li>
+                        <li><a class="social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a></li>
+                        <li><a class="social" href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a></li>
+                        <li><a class="social" href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
 
-        <div> 
-            <img src="./media/imagenes/opening_door.jpg" alt="">
-        </div>
+        <main>
+            <div> 
+                <img id="door" src="./media/imagenes/opening_door.jpg" alt="">
+            </div>
 
 
-        <div class="search_container">
-            <div>
-            <h3>Fecha de entrada</h3>
-            <input type="date" id="start" name="trip-start"
-            value="2018-07-22"
-            min="2018-01-01" max="2018-12-31">
-        </div>
-        </div>
-
-        <div>
-            <h3>Fecha de salida</h3>
+            <div class="search_container">
+                <div>
+                <h3>Fecha de entrada</h3>
                 <input type="date" id="start" name="trip-start"
                 value="2018-07-22"
                 min="2018-01-01" max="2018-12-31">
-        </div>
-        
-        <div>
-            <h3> Habitación</h3>
-            <select name="cars" id="cars">
-                <option value="volvo">Jacuzzi deluxe</option>
-                <option value="saab">Romantic bed</option>
-                <option value="mercedes">Simple deluxe</option>
-                <option value="audi">just bed</option>
-            </select>
-        </div>
+            </div>
+            </div>
 
-        <div>   
-            <h3>Ver disponibilidad</h3>
-            <input type="button" id="search" value="BUSCAR">
-        </div>
-
-
-        <div class="carrusel">
-            <div>   <img src="./media/imagenes/room1.jpg" alt="primera habitacion"></div>
-            <div>   <h3>Jacuzzi deluxe</h3></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem numquam voluptatum placeat cupiditate qui ducimus laudantium corrupti earum magni fuga veritatis animi voluptas quibusdam, cum dolor quia quod quae consequatur nam porro eaque? Amet ipsum repellat repudiandae! Corporis, autem ipsum! Illo molestias natus quasi aut quod delectus pariatur dolorum et maxime alias.</p>
+            <div>
+                <h3>Fecha de salida</h3>
+                    <input type="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31">
+            </div>
             
-            <ol>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-                <li>Elemento 4</li>
-                <li>Elemento 5</li>
-            </ol>
+            <div>
+                <h3> Habitación</h3>
+                <select name="cars" id="cars">
+                    <option value="volvo">Jacuzzi deluxe</option>
+                    <option value="saab">Romantic bed</option>
+                    <option value="mercedes">Simple deluxe</option>
+                    <option value="audi">just bed</option>
+                </select>
+            </div>
 
-            <input type="button" id="RESERVA" value="RESERVAR">
-
-
-        </div>
-
-
-        <div>   
-            <video width="640" height="480" autoplay muted loop>
-                <source src="./media/videos/COUPLE_ON_BED.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        
-        <div class="Testimonios">
-            <H2>DISFRUTA TÚ TAMBIÉN CON NOSOTROS</H2>
-                <DIV class="item_testimonios"><IMg src="./media/imagenes/icon_user_femele.svg"></IMg></DIV>
-                <div><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P></div>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-
-                <DIV class="item_testimonios"><IMg src="./media/imagenes/icons8-user-male.svg"></IMg></DIV>
-                <div>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
-                </div>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
-                <img src="./media/imagenes/star.svg" alt="" width=10px>
+            <div>   
+                <h3>Ver disponibilidad</h3>
+                <input type="button" id="search" value="BUSCAR">
+            </div>
 
 
-        </div>
+            <div class="carrusel">
+                <div>   <img src="./media/imagenes/room1.jpg" alt="primera habitacion"></div>
+                <div>   <h3>Jacuzzi deluxe</h3></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem numquam voluptatum placeat cupiditate qui ducimus laudantium corrupti earum magni fuga veritatis animi voluptas quibusdam, cum dolor quia quod quae consequatur nam porro eaque? Amet ipsum repellat repudiandae! Corporis, autem ipsum! Illo molestias natus quasi aut quod delectus pariatur dolorum et maxime alias.</p>
+                
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>Elemento 5</li>
+                </ol>
 
+                <input type="button" id="RESERVA" value="RESERVAR">
+
+
+            </div>
+
+
+            <div>   
+                <video width="640" height="480" autoplay muted loop>
+                    <source src="./media/videos/COUPLE_ON_BED.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            
+            <div class="Testimonios">
+                <H2>DISFRUTA TÚ TAMBIÉN CON NOSOTROS</H2>
+                    <DIV class="item_testimonios"><IMg src="./media/imagenes/icon_user_femele.svg"></IMg></DIV>
+                    <div><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P></div>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+
+                    <DIV class="item_testimonios"><IMg src="./media/imagenes/icons8-user-male.svg"></IMg></DIV>
+                    <div>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
+                    </div>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+                    <img src="./media/imagenes/star.svg" alt="" width=10px>
+            </div>
+        </main>
         <footer>    
 
                 <div class="container_footer"> 
@@ -118,14 +121,14 @@
 
 
                 <div class="container_footer">
-                    <div><a href="#"></a>SERVICIOS</div>
-                    <div><a href="#"></a>POLITICA</div>
-                    <div><a href="#"></a>RESTRICCIONES</div</>
+                    <div><a href="#">SERVICIOS</a></div>
+                    <div><a href="#">POLITICA</a></div>
+                    <div><a href="#">RESTRICCIONES</a></div</>
                 </div>
 
                 <div class="container_footer"> 
-                    <div><a href="#"></a>CONTÁCTANOS</div>
-                    <div><a href="#"></a>LIBRO DE RECLAMACIONES</div>
+                    <div><a href="#">CONTÁCTANOS</a></div>
+                    <div><a href="#">LIBRO DE RECLAMACIONES</a></div>
                 </div>
 
                 <div CLASS="social_footer">
@@ -133,7 +136,7 @@
                     <a href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de facebook"></a>
                     <a href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de facebook"></a>
                 </div>
-                <P>Todos los derechos reservados www.HotelWimbledon.com ©</P>
+                <P id="Derechos">Todos los derechos reservados www.HotelWimbledon.com ©</P>
         </footer>
 
 

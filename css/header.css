@@ -1,0 +1,27 @@
+/* Reset Css */
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style: none;    
+}
+
+/* Colors*/
+li, h2,h3 {
+color:#957943;   
+}
+
+a, p {
+color:#DCBD72    
+}
+
+#Derechos 
+{
+color: #8E0D1A
+}
+
+.menuList {
+color: #8E0D10;
+text-transform: uppercase;
+font-weight: 700;
+}
