@@ -1,0 +1,140 @@
+/* Reset Css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Roboto+Slab:wght@300&display=swap');
+*{
+    
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style: none;    
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Colors*/
+li, h2,h3 {
+color:#957943;   
+}
+
+a, p {
+color:#DCBD72    
+}
+
+#Derechos 
+{
+color: #8E0D1A
+}
+
+nav{
+    position:absolute;
+    top: 25%;
+    right:5%;
+}
+
+.menuList {
+color:white;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 1.3rem;
+font-family: 'Nunito', sans-serif;
+opacity: 0.80;
+}
+
+body{
+   background-image: url("../media/imagenes/CITY.jpg");
+    background-position: center;
+}
+
+
+header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-bottom: 2px solid orange;
+    position: relative;
+
+    margin: 1% auto;
+    width: 90vw;
+    height: 180px;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    border-radius: 28px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 3px rgba(255,255,255,0.4) solid;
+    border-bottom: 3px rgba(40,40,40,0.35) solid;
+    border-right: 3px rgba(40,40,40,0.35) solid;
+    
+
+}
+header .logo {
+    width: auto;
+    height: auto;
+}
+
+header .logo {
+    margin: 8% 8% 8% 50% ;
+}
+
+
+header .header_container ul {
+    list-style: none;
+}
+header .header_container ul li {
+    display: inline;
+}
+header .header_container ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+#door {
+    display:block;
+    margin-right: 3vw;
+    border-radius: 40px;
+    height:55vh;
+    width:40vw;
+}
+#title {
+    display:block;
+    color:#E8D896;
+    margin-left: 4vw;
+    font-weight:700;
+    font-size: 3rem;
+    TEXT-transform: capitalize;
+    
+}
+
+.containerDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+
+    margin: 1% auto;
+    width: 85vw;
+    height: 70vh;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    border-radius: 28px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 3px rgba(255,255,255,0.4) solid;
+    border-bottom: 3px rgba(40,40,40,0.35) solid;
+    border-right: 3px rgba(40,40,40,0.35) solid;
+}
+
+.Eslogan{
+
+color:white;
+font-size:  1.3rem;
+font-weight: 400;
+letter-spacing:normal;
+line-height: 1;
+}
