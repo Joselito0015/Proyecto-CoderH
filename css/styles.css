@@ -21,7 +21,7 @@ color:#DCBD72
 
 #Derechos 
 {
-color: #8E0D1A
+color: White;
 }
 
 nav{
@@ -79,13 +79,13 @@ header .logo {
 }
 
 
-header .header_container ul {
+header .headerContainer ul {
     list-style: none;
 }
-header .header_container ul li {
+header .headerContainer ul li {
     display: inline;
 }
-header .header_container ul li a {
+header .headerContainer ul li a {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
@@ -137,4 +137,31 @@ font-size:  1.3rem;
 font-weight: 400;
 letter-spacing:normal;
 line-height: 1;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1% auto;
+    width: 85vw;
+    align-items: center;
+    gap: 20px;
+    border-radius: 28px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 110, 132, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 3px rgba(255,255,255,0.4) solid;
+    border-bottom: 3px rgba(40,40,40,0.35) solid;
+    border-right: 3px rgba(40,40,40,0.35) solid;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border-top: 3px rgba(255, 255, 255, 0.35) solid;
+    
 }
