@@ -95,7 +95,7 @@ header .headerContainer ul li a {
 #door {
     display:block;
     margin-right: 3vw;
-    border-radius: 40px;
+    border-radius: 80px;
     height:55vh;
     width:40vw;
 }
@@ -140,8 +140,9 @@ line-height: 1;
 }
 
 .container{
+    position:relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 1% auto;
     width: 85vw;
     align-items: center;
@@ -164,4 +165,86 @@ footer{
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
     border-top: 3px rgba(255, 255, 255, 0.35) solid;
     
+}
+
+.container .searchContainer {
+    margin: 30px auto;
+}
+
+
+.container .searchContainer input{
+    margin: 30px auto;
+}
+
+.container .searchContainer select{
+    margin: 30px auto;
+}
+
+.container .searchContainer h3{
+    color:#DCBD72;
+    font-weight: bold;
+}
+
+.container video{
+    padding: 3%;
+    border-radius:120px;
+    width: 70vw;
+}
+
+.imageSection{
+    padding:50PX;
+    border-radius: 150px;
+}
+
+
+.sectionsText{
+    padding-right: 5%;
+    padding-left: 3%;
+}
+
+#roomsContainer{
+    padding: 3%;
+}
+
+#imageContact{
+    width:50vw;
+    position:relative;
+    padding-right:0px;
+}
+
+#map{
+    display:inline-block;
+    width:25vw;
+    position:relative;
+}
+
+label{
+    color:#DCBD72
+}
+
+#filters{
+    padding:3%;
+}
+
+#filters img{
+    width: 40px;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+}
+
+.insideContainer{
+    width: 100%;
+}
+td{
+    text-align: center;
+}
+td h3{
+    color:#DCBD72; 
+}
+form{
+    margin:5%;
 }
