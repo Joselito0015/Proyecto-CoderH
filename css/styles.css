@@ -81,15 +81,17 @@ header .logo {
 
 header .headerContainer ul {
     list-style: none;
+    overflow:hidden;
 }
 header .headerContainer ul li {
-    display: inline;
+    float: left;
 }
 header .headerContainer ul li a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px;
+    padding: 50px 10px;
     margin-right: 20px;
+    display: inline-block;
 }
 
 #door {
@@ -248,3 +250,31 @@ td h3{
 form{
     margin:5%;
 }
+/* Sub menu */
+
+header .headerContainer ul{
+    list-style: none;
+}
+header .headerContainer ul li{
+    display: inline;
+}
+
+header .headerContainer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+header .headerContainer ul li ul{
+        display: none;
+        position: absolute;
+        padding-top: 15px;
+}
+
+header .headerContainer ul li:hover ul{
+    background-color:rgba(0, 110, 132);;
+    display: block;
+}
+
+
