@@ -40,8 +40,12 @@ opacity: 0.80;
 }
 
 body{
-   background-image: url("../media/imagenes/CITY.jpg");
-    background-position: center;
+   /* background-image: url("../media/imagenes/CITY.jpg"); */
+   /* background-color: Red; */
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,19,1) 57%, rgba(115,0,255,1) 100%); 
+   background-position: center;
+
 }
 
 
@@ -94,23 +98,6 @@ header .headerContainer ul li a {
     display: inline-block;
 }
 
-#door {
-    display:block;
-    margin-right: 3vw;
-    border-radius: 80px;
-    height:55vh;
-    width:40vw;
-}
-#title {
-    display:block;
-    color:#E8D896;
-    margin-left: 4vw;
-    font-weight:700;
-    font-size: 3rem;
-    TEXT-transform: capitalize;
-    
-}
-
 .containerDos{
     /* Se usó flex */
     display: flex;
@@ -132,6 +119,22 @@ header .headerContainer ul li a {
     border-bottom: 3px rgba(40,40,40,0.35) solid;
     border-right: 3px rgba(40,40,40,0.35) solid;
 }
+#door {
+    display:block;
+    margin-right: 3vw;
+    border-radius: 80px;
+    height:55vh;
+    width:40vw;
+}
+#title {
+    display:block;
+    color:#E8D896;
+    margin-left: 4vw;
+    font-weight:700;
+    font-size: 3rem;
+    TEXT-transform: capitalize;
+    
+}
 
 .Eslogan{
 
@@ -140,6 +143,19 @@ font-size:  1.3rem;
 font-weight: 400;
 letter-spacing:normal;
 line-height: 1;
+}
+
+.glass{
+    margin: 1% auto;
+    width: 85vw;
+    border-radius: 28px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 110, 132, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 3px rgba(255,255,255,0.4) solid;
+    border-bottom: 3px rgba(40,40,40,0.35) solid;
+    border-right: 3px rgba(40,40,40,0.35) solid;
+
 }
 
 .container{
@@ -159,6 +175,7 @@ line-height: 1;
     border-bottom: 3px rgba(40,40,40,0.35) solid;
     border-right: 3px rgba(40,40,40,0.35) solid;
 }
+
 footer{
     /* Tercera sección con flex */
     display: flex;
@@ -197,14 +214,14 @@ footer{
 }
 
 .imageSection{
-    padding:50PX;
-    border-radius: 150px;
+    width: 100%;
+    padding: 1%;
 }
 
 
 .sectionsText{
+    width: 50%;
     padding-right: 5%;
-    padding-left: 3%;
 }
 
 #roomsContainer{
@@ -281,4 +298,165 @@ header .headerContainer ul li:hover ul{
     display: block;
 }
 
+.containerGrid{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content:space-evenly;
+    align-content:center;
+    row-gap:20px;
+}
+/* Fin de sub menú */
 
+
+
+/*----- Responsive  Desing--------*/
+
+/* Phone */
+@media  screen and  (max-width: 780px){    
+    .container{
+        flex-direction:column;
+    }
+
+    .imageSection{
+        padding: 5%;
+    }
+
+    .sectionsText{
+        width: 80%;
+    }
+
+    .containerDos{
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    #title{
+        width:100%;
+        margin-left: 0px;
+        font-weight:700;
+        font-size: 2rem;
+        TEXT-transform: capitalize;
+        text-align:   center;
+    }
+    #door{
+        
+        width: 80%;
+        height: 50%;
+        margin-right: 0;
+        border-radius: 30px;
+        padding-bottom: 10px;
+        margin-top: 25px;
+    }
+
+
+    .containerGrid{
+        display:grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content:center;
+        align-content:center;
+        row-gap:20px;
+    }
+
+}
+
+
+
+
+/* Tablet */
+@media  screen and  (min-width: 780px){    
+
+    .containerDos{
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .imageSection{
+        width:40%;
+    }
+
+    #title{
+        width:100%;
+        margin-left: 0px;
+        font-weight:700;
+        font-size: 2rem;
+        TEXT-transform: capitalize;
+        text-align:   center;
+    }
+    #door{
+        
+        width: 80%;
+        height: 50%;
+        margin-right: 0;
+        border-radius: 30px;
+        padding-bottom: 10px;
+        margin-top: 25px;
+    }
+
+
+    .containerGrid{
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        justify-content:space-evenly;
+        align-content:center;
+        row-gap:20px;
+    }
+
+}
+
+
+
+/* Desktop */
+@media  screen and  (min-width: 1024px){    
+
+    #title {
+        display:block;
+        color:#E8D896;
+        margin-left: 4vw;
+        font-weight:700;
+        font-size: 3rem;
+        TEXT-transform: capitalize;
+        
+    }
+    
+
+    .containerGrid{
+        padding: 3%;
+        display:grid;
+        grid-template-columns: repeat(4,auto);
+        justify-content:space-evenly;
+        align-content:center;
+        row-gap:20px;
+    }
+
+    
+    .containerDos{
+        /* Se usó flex */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+
+        margin: 1% auto;
+        width: 85vw;
+        height: 70vh;
+        color: white;
+        align-items: center;
+        gap: 20px;
+        border-radius: 28px;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.15);
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+        border: 3px rgba(255,255,255,0.4) solid;
+        border-bottom: 3px rgba(40,40,40,0.35) solid;
+        border-right: 3px rgba(40,40,40,0.35) solid;
+    }
+
+    #door {
+        display:block;
+        margin-right: 3vw;
+        border-radius: 80px;
+        height:55vh;
+        width:40vw;
+    }
+
+}
