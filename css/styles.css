@@ -112,6 +112,7 @@ header .headerContainer ul li a {
 }
 
 .containerDos{
+    /* Se usó flex */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -142,6 +143,7 @@ line-height: 1;
 }
 
 .container{
+    /* Segunda sección con flex */
     position:relative;
     display: flex;
     justify-content: space-evenly;
@@ -158,6 +160,7 @@ line-height: 1;
     border-right: 3px rgba(40,40,40,0.35) solid;
 }
 footer{
+    /* Tercera sección con flex */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,8 +253,9 @@ td h3{
 form{
     margin:5%;
 }
-/* Sub menu */
 
+
+/* Sub menu - Pronto a ser retirado*/
 header .headerContainer ul{
     list-style: none;
 }
