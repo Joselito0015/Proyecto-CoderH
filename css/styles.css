@@ -1,5 +1,7 @@
 /* Reset Css */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Roboto+Slab:wght@300&display=swap');
+
+
 *{
     
     margin:0px;
@@ -24,6 +26,9 @@ color:#DCBD72
 color: White;
 }
 
+img {
+    transition: all .5s ease;
+}
 nav{
     position:absolute;
     top: 25%;
@@ -229,7 +234,7 @@ footer{
 }
 
 #imageContact{
-    width:50vw;
+    width:40vw;
     position:relative;
     padding-right:0px;
 }
@@ -285,6 +290,7 @@ header .headerContainer ul li a {
     color: white;
     padding: 5px 10px;
     margin-right: 10px;
+    transition: all .5s ease;
 }
 
 header .headerContainer ul li ul{
@@ -458,5 +464,24 @@ header .headerContainer ul li:hover ul{
         height:55vh;
         width:40vw;
     }
+
+}
+
+/* transformaciones */
+
+
+header .headerContainer ul li a:hover {
+    transition: all .5s ease;
+    /* color: white; */
+    color: rgba(255, 255, 255, .9);
+	transform: scale(1.1);
+    
+}
+
+
+img:hover{
+    transition: all .5s ease;
+    /* color: white; */
+    transform: scale(1.05);
 
 }

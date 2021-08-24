@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel wimbledon</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
     <body>
         <!-- Menú principal -->
         <header>
             <div>
-                <a class="menuList" href="./index.html"> <img class="logo" src="./media/imagenes/logo.png" alt=""></a>
+                <a class="menuList" href="./index.html"> <img class="logo animate__animated animate__fadeInDown" src="./media/imagenes/logo.png" alt="Logo Wimbledeon"></a>
             </div>
             <nav class="headerContainer">
                 <ul>
@@ -35,22 +36,25 @@
         <!-- Cuerpo de la web site-->
         <main>
                 <!-- Encabezado de la página -->
-                <div class="containerDos"> 
-                    <div  id="title">
-                        <h1>Hotel wimbledon</h1>
-                        <P class="Eslogan"> El hotel temático para parejas</P>
-                        <P class="Eslogan">Descubre la diferencia con nosotros</P>
+                <section  >
+                    <div class="containerDos "> 
+                        <div  id="title" class="animate__animated animate__fadeInLeft">
+                            <h1 >Hotel wimbledon</h1>
+                            <P class="Eslogan"> El hotel temático para parejas</P >
+                            <P class="Eslogan">Descubre la diferencia con nosotros</P>
+                        </div>
+                        
+                        <img  id="door" class="animate__animated animate__fadeInRight" src="./media/imagenes/opening_door.jpg" alt="mejor habitacion">
                     </div>
-                    <img id="door" src="./media/imagenes/opening_door.jpg" alt="">
-                </div>
+                </section>
 
                 <!-- Filtros a selccionar -->
                 <section  id="filters" class="container">
                     <h3>SELECCIONAR</h3>
-                    <img src="/media/imagenes/habitaciones/dining-room-cutlery-set-of-three-pieces-in-silhouettes.svg" alt="" width=30px>
-                    <img src="/media/imagenes/habitaciones/shower.svg" alt="" width=30px>
-                    <img src="/media/imagenes/habitaciones/bed.svg" alt="" width=30px>
-                    <img src="/media/imagenes/habitaciones/martini-glass-with-straw.svg" alt="" width=30px>
+                    <img src="/media/imagenes/habitaciones/dining-room-cutlery-set-of-three-pieces-in-silhouettes.svg" alt="icono seleccion" width=30px>
+                    <img src="/media/imagenes/habitaciones/shower.svg" alt="icono seleccion" width=30px>
+                    <img src="/media/imagenes/habitaciones/bed.svg" alt="icono seleccion" width=30px>
+                    <img src="/media/imagenes/habitaciones/martini-glass-with-straw.svg" alt="icono seleccion" width=30px>
                 </section>
                 
                 <!-- Tabla con habitaciones -->
@@ -59,19 +63,19 @@
                         <tr>
                             <td>
                                 <H3>Habitacion 1</H3>
-                                <img src="media/imagenes/Habitaciones/pacific-dream-presidencial-4.jpg" alt="" width=300px>
+                                <img src="media/imagenes/Habitaciones/pacific-dream-presidencial-4.jpg" alt="habitacion presidencial" width=300px>
                                 <div><input type="button" id="RESERVA" value="RESERVAR"></div>
                             </td>
 
                             <td>
                                 <H3>Habitación 2</H3>
-                                <img src="media/imagenes/Habitaciones/pacific-dream.jpg" alt="" width=300px>
+                                <img src="media/imagenes/Habitaciones/pacific-dream.jpg" alt="habitacion pacific dream" width=300px>
                                 <div><input type="button" id="RESERVA" value="RESERVAR"></div>    
                             </td>   
 
                             <td>
                                 <H3>Habitación 3</H3>
-                                <img src="media/imagenes/Habitaciones/suite-presidencial-2.jpg" alt="" width=300px>
+                                <img src="media/imagenes/Habitaciones/suite-presidencial-2.jpg" alt="habitacion presidencial 2" width=300px>
                                 <div><input type="button" id="RESERVA" value="RESERVAR"></div>    
                             </td>
                                 
@@ -80,19 +84,19 @@
                         <tr>
                             <td>
                                 <H3>Habitación 4</H3>
-                                <img src="media/imagenes/Habitaciones/riverside-02-1024x800.jpg" alt="" width=300px>
+                                <img src="media/imagenes/Habitaciones/riverside-02-1024x800.jpg" alt="habitación simple" width=300px>
                                 <div><input type="button" id="RESERVA" value="RESERVAR"></div>  
                             </td>
 
                             <td>
                                 <H3>Habitación 5</H3>
-                                <img src="media/imagenes/Habitaciones/camara-seca-y-jacuzzi-4.jpg" alt="" width=300px>
+                                <img src="media/imagenes/Habitaciones/camara-seca-y-jacuzzi-4.jpg" alt="habitación jacuzzy" width=300px>
                                 <div><input type="button" id="RESERVA" value="RESERVAR"></div>  
                             </td>   
 
                             <td>
                                 <H3>Habitación 6</H3>
-                                <img src="media/imagenes/Habitaciones/Hawaian-Dreams-2.jpg" alt="" width=300px>
+                                <img src="media/imagenes/Habitaciones/Hawaian-Dreams-2.jpg" alt="habitación Hawain Dreams" width=300px>
                                 <div><input type="button" id="RESERVA" value="RESERVAR"></div>  
                             </td>
                         </tr>
@@ -105,7 +109,7 @@
         <footer>    
 
             <div class="containerFooter"> 
-                <img src="./media/imagenes/logo.png" alt="">     
+                <img src="./media/imagenes/logo.png" alt="Logo">     
             </div>
 
 
