@@ -7,30 +7,45 @@
     <title>Hotel wimbledon</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 </head>
     <body>
         <!-- Menú principal -->
         <header>
-            <div>
-                <a class="menuList" href="../index.html"> <img class="logo animate__animated animate__fadeInDown" src="../media/imagenes/logo.png" alt="Logo Wimbledeon"></a>
-            </div>
-            <nav class="headerContainer">
-                <ul>
-                    <li><a class="menuList" href="../index.html">Inicio</a>
-                    <li><a class="menuList" href="./Habitaciones.html">Habitaciones</a></li>
-                    <li><a class="menuList" href="./Nosotros.html">Nosotros</a></li>
-                    <li><a class="menuList" href="./Reservar.html">Reservar</a></li>
-                    <li><a class="menuList" href="./Contactanos.html">Contáctanos</a>
-                        <ul>
-                            <li><a href="">SubItem</a></li>
-                            <li><a href="">SubItem</a></li>
-                        </ul>
+            <!-- Menú principal -->
+            <nav class="navbar navbar-expand-lg navbar-dark  glass">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class=" animate__animated animate__fadeInDown" src="../media/imagenes/logo.png" alt="LogoWimbledeon"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active menuList" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li><a class="social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="../media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a></li>
-                    <li><a class="social" href="#"><img src="../media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a></li>
-                    <li><a class="social" href="#"><img src="../media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a></li>
-                </ul>
-            </nav> 
+                    <li class="nav-item">
+                        <a class="nav-link active menuList" href="./Habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menuList" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menuList" href="./Reservar.html">Reservar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menuList" href="./Contactanos.html">Contáctanos</a>
+                    </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a class="social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="../media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
+                        <a class="social" href="#"><img src="../media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a>
+                        <a class="social" href="#"><img src="../media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a>
+                    </span>
+                </div>
+                </div>
+            </nav>
         </header>
 
         <!-- Cuerpo de la web site-->
@@ -131,5 +146,6 @@
             </div>
             <P id="Derechos">Todos los derechos reservados www.HotelWimbledon.com ©</P>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>

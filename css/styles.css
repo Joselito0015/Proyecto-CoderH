@@ -29,11 +29,7 @@ color: White;
 img {
     transition: all .5s ease;
 }
-nav{
-    position:absolute;
-    top: 25%;
-    right:5%;
-}
+
 
 .menuList {
 color:white;
@@ -54,38 +50,14 @@ body{
 }
 
 
-header {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    border-bottom: 2px solid orange;
-    position: relative;
-
-    margin: 1% auto;
-    width: 90vw;
-    height: 180px;
-    color: white;
-    align-items: center;
-    gap: 20px;
-    border-radius: 28px;
-    backdrop-filter: blur(3px);
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-    border: 3px rgba(255,255,255,0.4) solid;
-    border-bottom: 3px rgba(40,40,40,0.35) solid;
-    border-right: 3px rgba(40,40,40,0.35) solid;
-    
-
-}
 header .logo {
     width: auto;
     height: auto;
 }
-
-header .logo {
+/* 
+header #logo {
     margin: 8% 8% 8% 50% ;
-}
+} */
 
 
 header .headerContainer ul {
@@ -137,7 +109,7 @@ header .headerContainer ul li a {
     margin-left: 4vw;
     font-weight:700;
     font-size: 3rem;
-    TEXT-transform: capitalize;
+    text-transform: capitalize;
     
 }
 
@@ -212,6 +184,12 @@ footer{
     font-weight: bold;
 }
 
+.searchContainer div{
+
+display:flex;
+flex-direction: column;
+align-items: center;
+}
 .container video{
     padding: 3%;
     border-radius:120px;
@@ -341,7 +319,7 @@ header .headerContainer ul li:hover ul{
         margin-left: 0px;
         font-weight:700;
         font-size: 2rem;
-        TEXT-transform: capitalize;
+        text-transform: capitalize;
         text-align:   center;
     }
     #door{
@@ -385,7 +363,7 @@ header .headerContainer ul li:hover ul{
         margin-left: 0px;
         font-weight:700;
         font-size: 2rem;
-        TEXT-transform: capitalize;
+        text-transform: capitalize;
         text-align:   center;
     }
     #door{
@@ -420,7 +398,7 @@ header .headerContainer ul li:hover ul{
         margin-left: 4vw;
         font-weight:700;
         font-size: 3rem;
-        TEXT-transform: capitalize;
+        text-transform: capitalize;
         
     }
     
@@ -470,7 +448,7 @@ header .headerContainer ul li:hover ul{
 /* transformaciones */
 
 
-header .headerContainer ul li a:hover {
+.menuList:hover {
     transition: all .5s ease;
     /* color: white; */
     color: rgba(255, 255, 255, .9);
@@ -484,4 +462,17 @@ img:hover{
     /* color: white; */
     transform: scale(1.05);
 
+}
+
+.containerFooter div a {
+    color:#DCBD72;
+    text-decoration:none;
+}
+
+.flexContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top:20px;
+margin-bottom:20px;
 }
