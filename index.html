@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel wimbledon</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     
@@ -38,9 +39,9 @@
                         </li>
                         </ul>
                         <span class="navbar-text">
-                            <a class="social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
-                            <a class="social" href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a>
-                            <a class="social" href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a>
+                            <a class="nav__social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
+                            <a class="nav__social" href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de instagram"></a>
+                            <a class="nav__social" href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de youtube"></a>
                         </span>
                     </div>
                 </div>
@@ -52,11 +53,11 @@
             <!-- Sección de encabezado -->
             <!-- Esta sección tiene el desafío del flex -->
             <section  >
-                <div class="containerDos "> 
+                <div class="banner"> 
                     <div  id="title" class="animate__animated animate__fadeInLeft">
                         <h1 >Hotel wimbledon</h1>
-                        <P class="Eslogan"> El hotel temático para parejas</P >
-                        <P class="Eslogan">Descubre la diferencia con nosotros</P>
+                        <P class="banner__eslogan"> El hotel temático para parejas</P >
+                        <P class="banner__eslogan">Descubre la diferencia con nosotros</P>
                     </div>
                     
                     <img  id="door" class="animate__animated animate__fadeInRight" src="./media/imagenes/opening_door.jpg" alt="mejor Habitación wimbledon">
@@ -65,7 +66,7 @@
 
             <!-- Seleccion de Fechas -->
             <section class="containerGrid glass">
-                <div class="searchContainer">
+                <div class="Filters__items">
                     <div>
                     <h3>Fecha de entrada</h3>
                     <input type="date" id="start" name="trip-start"
@@ -74,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="searchContainer" >
+                <div class="Filters__items" >
                     <div>
                     <h3>Fecha de salida</h3>
                         <input type="date" id="start" name="trip-start"
@@ -83,7 +84,7 @@
                     </div>    
                 </div>
                 
-                <div class="searchContainer">
+                <div class="Filters__items">
                     <div>
                     <h3> Habitación</h3>
                     <select name="cars" id="cars">
@@ -95,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="searchContainer">   
+                <div class="Filters__items">   
                     <div>
                     <h3>Ver disponibilidad</h3>
                     <input type="button" id="search" value="BUSCAR">
@@ -187,7 +188,7 @@
             </section>
          
             <!-- Video -->
-            <section class="container">
+            <section class="container" id=containerVideo>
                
                 <video  autoplay muted loop>
                     <source src="./media/videos/COUPLE_ON_BED.mp4" type="video/mp4" alt="pareja en cama">
@@ -197,54 +198,71 @@
             
 
             <!-- Testimonios -->
-            <section class="container">
-                <div>
-                    <H2>DISFRUTA TÚ TAMBIÉN CON NOSOTROS</H2>
-                    <DIV class="item_testimonios"><IMg src="./media/imagenes/icon_user_femele.svg"alt="icono femenino"></IMg></DIV>
-                    <div><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P></div>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-
-                    <DIV class="itemTestimonios"><IMg src="./media/imagenes/icons8-user-male.svg" alt="icono masculino"></IMg></DIV>
-                    <div>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
+            <section class="container">              
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    
+                    
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <div class="flexContainer">
+                                <img src="./media/imagenes/icon_user_femele.svg"alt="icono femenino"></img>
+                                <P>TESTIMONIO 1 adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
+                                <div >
+                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="carousel-item">
+                            <div class="flexContainer">
+                                <div class="flexContainer">
+                                    <img src="./media/imagenes/icons8-user-male.svg" alt="icono masculino"></img>
+                                    <P>Testimonio 2 neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
+                                    <div>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                    <img src="./media/imagenes/star.svg" alt="estrella" width=10px>
                 </div>
             </section>
         </main>
         
 
+
         <!-- Footer -->
         <footer>    
 
-                <div class="containerFooter"> 
+                <div class="footer__links"> 
                     <img src="./media/imagenes/logo.png" alt="Logo wimbledon">     
                 </div>
 
 
-                <div class="containerFooter">
-                    <div><a href="#">SERVICIOS</a></div>
-                    <div><a href="#">POLITICA</a></div>
-                    <div><a href="#">RESTRICCIONES</a></div</>
+                <div class="footer__links">
+                    <div><a class="footer__link" href="#">SERVICIOS</a></div>
+                    <div><a class="footer__link" href="#">POLITICA</a></div>
+                    <div><a class="footer__link" href="#">RESTRICCIONES</a></div</>
                 </div>
 
-                <div class="containerFooter"> 
-                    <div><a href="#">CONTÁCTANOS</a></div>
-                    <div><a href="#">LIBRO DE RECLAMACIONES</a></div>
+                <div class="footer__links"> 
+                    <div><a class="footer__link" href="#">CONTÁCTANOS</a></div>
+                    <div><a class="footer__link" href="#">LIBRO DE RECLAMACIONES</a></div>
                 </div>
 
-                <div CLASS="socialFooter">
-                    <a href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
-                    <a href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de facebook"></a>
-                    <a href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de facebook"></a>
+                <div CLASS="footer__socials">
+                    <a class="footer_social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="./media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
+                    <a class="footer_social" href="#"><img src="./media/imagenes/icons8-instagram-logo.svg" alt="icono de facebook"></a>
+                    <a class="footer_social" href="#"><img src="./media/imagenes/icons8-youtube-play-button.svg" alt="icono de facebook"></a>
                 </div>
                 <P id="Derechos">Todos los derechos reservados www.HotelWimbledon.com ©</P>
         </footer>

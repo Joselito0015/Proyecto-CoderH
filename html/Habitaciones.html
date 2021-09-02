@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel wimbledon</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+    
 </head>
     <body>
         <!-- Menú principal -->
@@ -52,11 +53,11 @@
         <main>
                 <!-- Encabezado de la página -->
                 <section  >
-                    <div class="containerDos "> 
+                    <div class="banner "> 
                         <div  id="title" class="animate__animated animate__fadeInLeft">
                             <h1 >Hotel wimbledon</h1>
-                            <P class="Eslogan"> El hotel temático para parejas</P >
-                            <P class="Eslogan">Descubre la diferencia con nosotros</P>
+                            <P class="banner__eslogan"> El hotel temático para parejas</P >
+                            <P class="banner__eslogan">Descubre la diferencia con nosotros</P>
                         </div>
                         
                         <img  id="door" class="animate__animated animate__fadeInRight" src="../media/imagenes/opening_door.jpg" alt="mejor habitacion">
@@ -66,83 +67,77 @@
                 <!-- Filtros a selccionar -->
                 <section  id="filters" class="container">
                     <h3>SELECCIONAR</h3>
-                    <img src="../media/imagenes/habitaciones/dining-room-cutlery-set-of-three-pieces-in-silhouettes.svg" alt="icono seleccion" width=30px>
-                    <img src="../media/imagenes/habitaciones/shower.svg" alt="icono seleccion" width=30px>
-                    <img src="../media/imagenes/habitaciones/bed.svg" alt="icono seleccion" width=30px>
-                    <img src="../media/imagenes/habitaciones/martini-glass-with-straw.svg" alt="icono seleccion" width=30px>
+                    <img class="filters__img" src="../media/imagenes/habitaciones/dining-room-cutlery-set-of-three-pieces-in-silhouettes.svg" alt="icono seleccion" width=30px>
+                    <img class="filters__img"src="../media/imagenes/habitaciones/shower.svg" alt="icono seleccion" width=30px>
+                    <img class="filters__img"src="../media/imagenes/habitaciones/bed.svg" alt="icono seleccion" width=30px>
+                    <img class="filters__img"src="../media/imagenes/habitaciones/martini-glass-with-straw.svg" alt="icono seleccion" width=30px>
                 </section>
                 
                 <!-- Tabla con habitaciones -->
                 <section class="container">
-                    <table>              
-                        <tr>
-                            <td>
-                                <H3>Habitacion 1</H3>
-                                <img src="../media/imagenes/Habitaciones/pacific-dream-presidencial-4.jpg" alt="habitacion presidencial" width=300px>
-                                <div><input type="button" id="RESERVA" value="RESERVAR"></div>
-                            </td>
+                    <div class="grid__gallery">
 
-                            <td>
-                                <H3>Habitación 2</H3>
-                                <img src="../media/imagenes/Habitaciones/pacific-dream.jpg" alt="habitacion pacific dream" width=300px>
-                                <div><input type="button" id="RESERVA" value="RESERVAR"></div>    
-                            </td>   
+                        <div class="gallery__item">
+                            <H3>Habitacion 1</H3>
+                            <img class="item__img" src="../media/imagenes/Habitaciones/pacific-dream-presidencial-4.jpg" alt="habitacion presidencial" width=300px>
+                            <input class="item__button--active" type="button" id="RESERVA" value="RESERVAR">
+                        </div>
 
-                            <td>
-                                <H3>Habitación 3</H3>
-                                <img src="../media/imagenes/Habitaciones/suite-presidencial-2.jpg" alt="habitacion presidencial 2" width=300px>
-                                <div><input type="button" id="RESERVA" value="RESERVAR"></div>    
-                            </td>
-                                
-                        </tr>
+                        <div class="gallery__item">
+                            <H3>Habitación 2</H3>
+                            <img class="item__img" src="../media/imagenes/Habitaciones/pacific-dream.jpg" alt="habitacion pacific dream" width=300px>
+                            <input class="item__button--active" type="button" id="RESERVA" value="RESERVAR">
+                        </div>
 
-                        <tr>
-                            <td>
-                                <H3>Habitación 4</H3>
-                                <img src="../media/imagenes/Habitaciones/riverside-02-1024x800.jpg" alt="habitación simple" width=300px>
-                                <div><input type="button" id="RESERVA" value="RESERVAR"></div>  
-                            </td>
+                        <div class="gallery__item">
+                            <H3>Habitación 3</H3>
+                            <img class="item__img" src="../media/imagenes/Habitaciones/suite-presidencial-2.jpg" alt="habitacion presidencial 2" width=300px>
+                            <input  class="item__button--active" type="button" id="RESERVA" value="RESERVAR">
+                        </div>
 
-                            <td>
-                                <H3>Habitación 5</H3>
-                                <img src="../media/imagenes/Habitaciones/camara-seca-y-jacuzzi-4.jpg" alt="habitación jacuzzy" width=300px>
-                                <div><input type="button" id="RESERVA" value="RESERVAR"></div>  
-                            </td>   
+                        <div class="gallery__item">
+                            <H3>Habitación 4</H3>
+                            <img class="item__img" src="../media/imagenes/Habitaciones/riverside-02-1024x800.jpg" alt="habitación simple" width=300px>
+                            <input  class="item__button--active" type="button" id="RESERVA" value="RESERVAR">
+                        </div>
+                        <div  class="gallery__item">
+                            <H3>Habitación 5</H3>
+                            <img class="item__img" src="../media/imagenes/Habitaciones/camara-seca-y-jacuzzi-4.jpg" alt="habitación jacuzzy" width=300px>
+                            <input  class="item__button--active" type="button" id="RESERVA" value="RESERVAR">
+                        </div>
 
-                            <td>
-                                <H3>Habitación 6</H3>
-                                <img src="../media/imagenes/Habitaciones/Hawaian-Dreams-2.jpg" alt="habitación Hawain Dreams" width=300px>
-                                <div><input type="button" id="RESERVA" value="RESERVAR"></div>  
-                            </td>
-                        </tr>
-                    </table>
-
+                        <div  class="gallery__item">
+                            <H3>Habitación 6</H3>
+                            <img class="item__img" src="../media/imagenes/Habitaciones/Hawaian-Dreams-2.jpg" alt="habitación Hawain Dreams" width=300px>
+                            <input class="item__button--active" type="button" id="RESERVA" value="RESERVAR">
+                        </div>
+                    </div>
                 </section>
         </main>
 
         <!-- Pie de página -->
         <footer>    
 
-            <div class="containerFooter"> 
-                <img src="../media/imagenes/logo.png" alt="Logo">     
+            <div class="footer__links"> 
+                <img src="../media/imagenes/logo.png" alt="Logo wimbledon">     
             </div>
 
 
-            <div class="containerFooter">
-                <div><a href="#">SERVICIOS</a></div>
-                <div><a href="#">POLITICA</a></div>
-                <div><a href="#">RESTRICCIONES</a></div</>
+            <div class="footer__links">
+                <div><a class="footer__link" href="#">SERVICIOS</a></div>
+                <div><a class="footer__link" href="#">POLITICA</a></div>
+                <div><a class="footer__link" href="#">RESTRICCIONES</a></div</>
             </div>
 
-            <div class="containerFooter"> 
-                <div><a href="#">CONTÁCTANOS</a></div>
-                <div><a href="#">LIBRO DE RECLAMACIONES</a></div>
+            <div class="footer__links"> 
+                <div><a class="footer__link" href="#">CONTÁCTANOS</a></div>
+                <div><a class="footer__link" href="#">LIBRO DE RECLAMACIONES</a></div>
             </div>
 
-            <div CLASS="socialFooter">
-                <a href="https://www.facebook.com/Hotel.Wimbledon/"><img src="../media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
-                <a href="#"><img src="../media/imagenes/icons8-instagram-logo.svg" alt="icono de facebook"></a>
-                <a href="#"><img src="../media/imagenes/icons8-youtube-play-button.svg" alt="icono de facebook"></a>
+            <div CLASS="footer__socials">
+                <a class="footer_social" href="https://www.facebook.com/Hotel.Wimbledon/"><img src="../media/imagenes/icons8-facebook-logo.svg" alt="icono de facebook"></a>
+                <a class="footer_social" href="#"><img src="../media/imagenes/icons8-instagram-logo.svg" alt="icono de facebook"></a>
+                <a class="footer_social" href="#"><img src="../media/imagenes/icons8-youtube-play-button.svg" alt="icono de facebook"></a>
             </div>
             <P id="Derechos">Todos los derechos reservados www.HotelWimbledon.com ©</P>
         </footer>
