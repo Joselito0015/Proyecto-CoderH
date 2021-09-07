@@ -207,9 +207,6 @@ align-items: center;
     padding-right: 5%;
 }
 
-#roomsContainer{
-    padding: 3%;
-}
 
 #imageContact{
     width:40vw;
@@ -282,7 +279,7 @@ header .headerContainer ul li:hover ul{
     display: block;
 }
 
-.containerGrid{
+.Filters{
     display:grid;
     grid-template-columns: repeat(4,auto);
     justify-content:space-evenly;
@@ -333,7 +330,7 @@ header .headerContainer ul li:hover ul{
     }
 
 
-    .containerGrid{
+    .Filters{
         display:grid;
         grid-template-columns: repeat(1,auto);
         justify-content:center;
@@ -383,7 +380,7 @@ header .headerContainer ul li:hover ul{
     }
 
 
-    .containerGrid{
+    .Filters{
         display:grid;
         grid-template-columns: repeat(2,auto);
         justify-content:space-evenly;
@@ -413,7 +410,7 @@ header .headerContainer ul li:hover ul{
     }
     
 
-    .containerGrid{
+    .Filters{
         padding: 3%;
         display:grid;
         grid-template-columns: repeat(4,auto);

@@ -64,70 +64,73 @@
             </section>
             <!-- Información de contacto -->
 
-            <section class="container">
+            <section class="information">
 
-                <div class="sectionsText">
-                    <h2>Encuentranos en</h2>
-                    <P>Av. Costanera 2098, San Miguel (Cdra. 20 Av. La Paz) Lima, Perú </P>
+                <div class="container">
 
-                    <P>Teléfonos: (511) 5786000 | (511) 2647028</P>
-                        
-                    <P>Reservas: (511) 264-7028 | (511) 990-370-681 | (511) 941-965-168 | (511) 902-884-616</P>
-            
-                    <img class="imageSection" id="imageContact" src="../media/imagenes/Contactanos/Entrada.jpg" alt="Puerta Wimbledon">
-                                
+                    <div class="sectionsText">
+                        <h2>Encuentranos en</h2>
+                        <P>Av. Costanera 2098, San Miguel (Cdra. 20 Av. La Paz) Lima, Perú </P>
 
-                </div>
-
-                <!-- mapa del hotel -->
-                <div>
-
-                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.428114991742!2d-77.10468378457503!3d-12.082816945863378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c97e92551d3f%3A0x79640fc668c905ea!2sHotel%20Wimbledon!5e0!3m2!1sen!2spe!4v1627700558924!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                </div>
+                        <P>Teléfonos: (511) 5786000 | (511) 2647028</P>
+                            
+                        <P>Reservas: (511) 264-7028 | (511) 990-370-681 | (511) 941-965-168 | (511) 902-884-616</P>
                 
-            
+                        <img class="imageSection" id="imageContact" src="../media/imagenes/Contactanos/Entrada.jpg" alt="Puerta Wimbledon">
+                                    
+
+                    </div>
+
+                    <!-- mapa del hotel -->
+                    <div>
+
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.428114991742!2d-77.10468378457503!3d-12.082816945863378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c97e92551d3f%3A0x79640fc668c905ea!2sHotel%20Wimbledon!5e0!3m2!1sen!2spe!4v1627700558924!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+                
+                </div>
             </section>
 
             <!-- Formulario de contacto -->
-            <section class="container">
-                <form>
-                    <label for="name">Nombre</label>
-                    <input id="name" type="text">
-                    <br><br>
-                    <label for="surname">Apellido</label>
-                    <input id="surname" type="text">
-                    <br><br>
-                    <LABEL for="email">Email</label>
-                    <input type="email" id="email" >
-                    <br><br>
-                    <label for="topic"> Asunto</label>
-                    <input type="text" id="topic">
-                    <br><br>
-                    <Label for="siForm">¿Deseas que te llamemos?</Label>
-                    <input type="radio" name="r-llamada" id="siForm">Sí
-                    <input type="radio" name="r-llamada" >No
-                    <br><br>
-                    <label for="phone">Número de telefono</label>
-                    <input id="phone" type="tel">    
-                    <br><br>
-                    <label for="typeConsulta">¿Qué tipo consulta desea realizar? </label> 
-                    <select name="typeConsulta" id="typeConsulta">
-                        <option value="Reserva">Reserva especial</option>
-                        <option value="problema">Problema con la reserva</option>
-                        <option value="especial">Pedido especial</option>
-                        <option value="Other">Otro</option>
-                    </select>
-                    <br><br>
-                    <textarea name="consulta" id="consulta"></textarea>
-                    <br><br>
-                    <label>No soy un robot</label>
-                    <input type="checkbox">
-                    <br><br>
-                    <input type="submit" value="Enviar consulta">
-                    <input type="reset">
-                </form>
-
+            <section class="formulario">
+                <div class="container">
+                    <form>
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text">
+                        <br><br>
+                        <label for="surname">Apellido</label>
+                        <input id="surname" type="text">
+                        <br><br>
+                        <LABEL for="email">Email</label>
+                        <input type="email" id="email" >
+                        <br><br>
+                        <label for="topic"> Asunto</label>
+                        <input type="text" id="topic">
+                        <br><br>
+                        <Label for="siForm">¿Deseas que te llamemos?</Label>
+                        <input type="radio" name="r-llamada" id="siForm">Sí
+                        <input type="radio" name="r-llamada" >No
+                        <br><br>
+                        <label for="phone">Número de telefono</label>
+                        <input id="phone" type="tel">    
+                        <br><br>
+                        <label for="typeConsulta">¿Qué tipo consulta desea realizar? </label> 
+                        <select name="typeConsulta" id="typeConsulta">
+                            <option value="Reserva">Reserva especial</option>
+                            <option value="problema">Problema con la reserva</option>
+                            <option value="especial">Pedido especial</option>
+                            <option value="Other">Otro</option>
+                        </select>
+                        <br><br>
+                        <textarea name="consulta" id="consulta"></textarea>
+                        <br><br>
+                        <label>No soy un robot</label>
+                        <input type="checkbox">
+                        <br><br>
+                        <input type="submit" value="Enviar consulta">
+                        <input type="reset">
+                    </form>
+                </div>
             </section>
     </main>
 

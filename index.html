@@ -14,6 +14,8 @@
     <body>
         <header>
             <!-- Menú principal // Bootstrap -->
+            <!-- Se modificó el diseño de bootstrap: 
+                glass -> clase propia -->
             <nav class="navbar navbar-expand-lg navbar-dark  glass">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html"><img class=" animate__animated animate__fadeInDown" src="./media/imagenes/logo.png" alt="LogoWimbledeon"></a>
@@ -48,12 +50,14 @@
             </nav>
         </header>
 
+
         <!-- Cuerpo de la web -->
         <main>
+
             <!-- Sección de encabezado -->
             <!-- Esta sección tiene el desafío del flex -->
-            <section  >
-                <div class="banner"> 
+            <section  class="banner">
+               
                     <div  id="title" class="animate__animated animate__fadeInLeft">
                         <h1 >Hotel wimbledon</h1>
                         <P class="banner__eslogan"> El hotel temático para parejas</P >
@@ -61,11 +65,11 @@
                     </div>
                     
                     <img  id="door" class="animate__animated animate__fadeInRight" src="./media/imagenes/opening_door.jpg" alt="mejor Habitación wimbledon">
-                </div>
+            
             </section>
 
             <!-- Seleccion de Fechas -->
-            <section class="containerGrid glass">
+            <section class="Filters glass">
                 <div class="Filters__items">
                     <div>
                     <h3>Fecha de entrada</h3>
@@ -107,128 +111,132 @@
 
             <!-- Habitaciones de muestra en forma de carrusel // Bootstrap -->
 
-            <section class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <section class="carousel">
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="flexContainer">
+                                <img class="imageSection" src="./media/imagenes/room1.jpg" alt="primera habitacion">
+            
+                                <div class="sectionsText">
+                                <h3>Jacuzzi deluxe 1</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem.</p>
+                                
+                                <ol>
+                                    <li>Elemento 1</li>
+                                    <li>Elemento 2</li>
+                                    <li>Elemento 3</li>
+                                    <li>Elemento 4</li>
+                                    <li>Elemento 5</li>
+                                </ol>
+            
+                                <input type="button" id="RESERVA" value="RESERVAR">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flexContainer">
+                                <img class="imageSection" src="./media/imagenes/room2.jpg" alt="primera habitacion">
+            
+                                <div class="sectionsText">
+                                <h3>Presidencial</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem.</p>
+                                
+                                <ol>
+                                    <li>Elemento 1</li>
+                                    <li>Elemento 2</li>
+                                    <li>Elemento 3</li>
+                                    <li>Elemento 4</li>
+                                    <li>Elemento 5</li>
+                                </ol>
+            
+                                <input type="button" id="RESERVA" value="RESERVAR">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flexContainer">
+                                <img class="imageSection" src="./media/imagenes/room3.jpg" alt="primera habitacion">
+            
+                                <div class="sectionsText">
+                                <h3>Jacuzzy Deluxe</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem.</p>
+                                
+                                <ol>
+                                    <li>Elemento 1</li>
+                                    <li>Elemento 2</li>
+                                    <li>Elemento 3</li>
+                                    <li>Elemento 4</li>
+                                    <li>Elemento 5</li>
+                                </ol>
+            
+                                <input type="button" id="RESERVA" value="RESERVAR">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="flexContainer">
-                            <img class="imageSection" src="./media/imagenes/room1.jpg" alt="primera habitacion">
-        
-                            <div class="sectionsText">
-                            <h3>Jacuzzi deluxe 1</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem.</p>
-                            
-                            <ol>
-                                <li>Elemento 1</li>
-                                <li>Elemento 2</li>
-                                <li>Elemento 3</li>
-                                <li>Elemento 4</li>
-                                <li>Elemento 5</li>
-                            </ol>
-        
-                            <input type="button" id="RESERVA" value="RESERVAR">
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="flexContainer">
-                            <img class="imageSection" src="./media/imagenes/room2.jpg" alt="primera habitacion">
-        
-                            <div class="sectionsText">
-                            <h3>Presidencial</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem.</p>
-                            
-                            <ol>
-                                <li>Elemento 1</li>
-                                <li>Elemento 2</li>
-                                <li>Elemento 3</li>
-                                <li>Elemento 4</li>
-                                <li>Elemento 5</li>
-                            </ol>
-        
-                            <input type="button" id="RESERVA" value="RESERVAR">
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="flexContainer">
-                            <img class="imageSection" src="./media/imagenes/room3.jpg" alt="primera habitacion">
-        
-                            <div class="sectionsText">
-                            <h3>Jacuzzy Deluxe</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti rem odit nesciunt ipsum maiores corrupti impedit, assumenda adipisci mollitia expedita aspernatur unde, facilis et deserunt ipsam eaque omnis, consequatur ducimus hic? Autem nobis, omnis aperiam quidem.</p>
-                            
-                            <ol>
-                                <li>Elemento 1</li>
-                                <li>Elemento 2</li>
-                                <li>Elemento 3</li>
-                                <li>Elemento 4</li>
-                                <li>Elemento 5</li>
-                            </ol>
-        
-                            <input type="button" id="RESERVA" value="RESERVAR">
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+                </div>
             </section>
          
             <!-- Video -->
-            <section class="container" id=containerVideo>
-               
+            <section class="Video">
+               <div class="container" id="containerVideo">
                 <video  autoplay muted loop>
                     <source src="./media/videos/COUPLE_ON_BED.mp4" type="video/mp4" alt="pareja en cama">
                 </video>
-            
+               </div>
             </section>
             
 
             <!-- Testimonios -->
-            <section class="container">              
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    
-                    
-                    <div class="carousel-inner">
+            <section class="testimonios">              
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         
-                        <div class="carousel-item active">
-                            <div class="flexContainer">
-                                <img src="./media/imagenes/icon_user_femele.svg"alt="icono femenino"></img>
-                                <P>TESTIMONIO 1 adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
-                                <div >
-                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                        
+                        <div class="carousel-inner">
+                            
+                            <div class="carousel-item active">
+                                <div class="flexContainer">
+                                    <img src="./media/imagenes/icon_user_femele.svg"alt="icono femenino"></img>
+                                    <P>TESTIMONIO 1 adipisicing elit. In neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
+                                    <div >
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="carousel-item">
-                            <div class="flexContainer">
+                        
+                            <div class="carousel-item">
                                 <div class="flexContainer">
-                                    <img src="./media/imagenes/icons8-user-male.svg" alt="icono masculino"></img>
-                                    <P>Testimonio 2 neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
-                                    <div>
-                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
-                                    <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                    <div class="flexContainer">
+                                        <img src="./media/imagenes/icons8-user-male.svg" alt="icono masculino"></img>
+                                        <P>Testimonio 2 neque quia ea blanditiis explicabo. Fugiat ipsa distinctio debitis rerum consequatur.</P>
+                                        <div>
+                                        <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                        <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                        <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                        <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                        <img class="carousel__start" src="./media/imagenes/star.svg" alt="estrella" width=10px>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
