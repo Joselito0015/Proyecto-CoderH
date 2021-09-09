@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel wimbledon</title>
+    <meta name="description" content="Tenemos las mejores habitaciones temáticas. Reserva con nosotros">
+    <meta name="keywords" content="HOTEL, WIMBLEDON, TEMÁTICO, JACUZZY, ECONÓMICO, HABITACIONES, RESERVA, DUCHAS, SAUNA">
+    <title>Hotel wimbledon | Reserva</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
@@ -52,7 +55,7 @@
             <!-- Encabezado principal -->
             <section  class="banner ">
                     <div  id="title" class="animate__animated animate__fadeInLeft">
-                        <h1 >Hotel wimbledon</h1>
+                        <h1 >Reserva</h1>
                         <P class="banner__eslogan"> El hotel temático para parejas</P >
                         <P class="banner__eslogan">Descubre la diferencia con nosotros</P>
                     </div>
@@ -61,8 +64,8 @@
             </section>
 
             <!-- Selección de fechas -->
-            <section class="Filters glass">
-                <div class="searchContainer">
+            <section class="Dates">
+                <div class="Dates__items">
                     <div>
                     <h3>Fecha de entrada</h3>
                     <input type="date" id="start" name="trip-start"
@@ -70,17 +73,17 @@
                     min="2018-01-01" max="2018-12-31">
                     </div>
                 </div>
-        
-                <div class="searchContainer">
+
+                <div class="Dates__items" >
                     <div>
                     <h3>Fecha de salida</h3>
                         <input type="date" id="start" name="trip-start"
                         value="2018-07-22"
                         min="2018-01-01" max="2018-12-31">
-                    </div>
+                    </div>    
                 </div>
                 
-                <div class="searchContainer">
+                <div class="Dates__items">
                     <div>
                     <h3> Habitación</h3>
                     <select name="cars" id="cars">
@@ -91,19 +94,20 @@
                     </select>
                     </div>
                 </div>
-        
-                <div class="searchContainer">
-                    <div>  
+
+                <div class="Dates__items">   
+                    <div>
                     <h3>Ver disponibilidad</h3>
                     <input type="button" id="search" value="BUSCAR">
-                    </div>    
+                    </div>
                 </div>
+
             </section>
 
             <!-- Cuartos disponibles -->
 
-            <section class="rooms ">
-                <div class="container">
+            <section class="rooms">
+                
                     <div>
                         <img class="imageSection insideContainer"  src="../media/imagenes/room1.jpg" alt="primera habitacion">
                         <div >   
@@ -139,7 +143,7 @@
                             <input type="button" id="RESERVA" value="RESERVAR">
                         </div>
                     </div>
-                </div>
+              
             </section>
         </main>
 

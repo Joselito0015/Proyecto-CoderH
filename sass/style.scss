@@ -1,5 +1,70 @@
+ 
+    .positions{
+        position:relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-    section {
+    .size{
+        margin: 1% auto;
+        width: 85vw;
+        border-radius: 28px;
+    }
+
+    .glass{
+        backdrop-filter: blur(5spx);
+        
+        background-color: rgba(26, 31, 26, 0.50);
+        box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+        border: 3px rgba(255,255,255,0.4) solid;
+        border-bottom: 3px rgba(40,40,40,0.35) solid;
+        border-right: 3px rgba(40,40,40,0.35) solid;
+    
+    }
+
+
+
+
+    //blocks
+    .testimonios{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+    }
+
+    .Dates {
+        @extend .glass;
+        @extend .size;
+
+    }
+
+    .Video{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+        video{
+            padding: 3%;
+            border-radius:120px;
+            width: 70vw;
+        }
+    }
+
+    .Carousel{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+    }
+
+    .navbar{
+        @extend .size;
+
+    }
+
+    .habitaciones{
+        @extend .glass;
+        @extend .size;
+        
         & .grid__gallery{
             display:grid;
             grid-template-columns: repeat(3,auto);
@@ -28,10 +93,71 @@
             }
         }
     }
-    
 
+    .Filters{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+        padding:3%;
+    }
+
+    .aboutUs{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+
+    }
+
+    .rooms{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+
+    }
+
+    .information{
+        @extend .glass;
+        @extend .size;
+        
+        padding:3%;
+        display: grid;
+        grid-template-columns: repeat(2,auto); 
+        text-align: center;
+        align-items: center;
+
+        
+        
+        & .information__column1{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80%;
+                display:block;
+            }
+        }
+        
+        & .information__column2{
+            display:block;
+            & .information__map{
+                padding: 3%;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .formulario{
+        @extend .glass;
+        @extend .size;
+        @extend .positions;
+    }
+
+
+
+    
     @media  screen and  (max-width: 780px){   
-        section{ 
+        .habitaciones{ 
             & .grid__gallery{
             display:grid;
             grid-template-columns: repeat(1,auto);
@@ -50,4 +176,32 @@
             }
             }
         }
-      }
+
+        .Video{
+            display:none;
+        }
+
+        .information{
+            display:grid;
+            grid-template-columns: repeat(1,auto);
+
+            & .information__column2{
+                display:block;
+                & .information__map{
+                    padding: 3%;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+
+        .aboutUs{
+            flex-direction: column;
+        }
+
+        .rooms{
+            flex-direction: column;
+        }
+    }
+
+
