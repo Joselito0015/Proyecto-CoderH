@@ -231,11 +231,19 @@
 
 
         footer{
-            overflow: hidden;
+            overflow:visible;
             justify-content:center;
-            align-items:center;
+            align-items:initial;
+            gap:5px;
             width: 100vw;
             grid-template-columns: repeat(3,auto);
+            padding-top: 5%;
+            a{
+                font-size:15px;
+            }
+            P{
+                font-size: 10px;
+            }
         }
         .habitaciones{ 
             & .grid__gallery{
