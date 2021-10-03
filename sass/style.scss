@@ -48,6 +48,17 @@
         @extend .glass;
         @extend .size;
         @extend .positions;
+        & .testimonios__start{
+            display: inline;
+            width: 15px;
+            margin:0px;
+            padding:0px;
+            fill:rgb(212,36,4);
+
+        }
+        & .testimonios_icono{
+            fill: rgb(135,14,6)
+        }
     }
 
     .Dates {
@@ -128,7 +139,12 @@
                     transition: all .5s ease;
                     padding:4%;
                     border-radius: 15%;
-                    
+                    opacity: 0.65;
+                    object-fit: cover;
+
+                }
+                img:hover{
+                    opacity: 1;
                 }
                 input{
                     @extend .button--Elegant;
@@ -143,10 +159,23 @@
         @extend .glass;
         @extend .size;
         @extend .positions;
-        padding:3%;
+        height:200px;
+        justify-content: space-evenly;
+        svg{
+            display:inline-block;
+            fill: rgba(212, 161, 161, 0.8);
+            transition: all .5s ease;
+            
+            width:40px;
+            margin:0px;
+            padding:0px;
+          }
+
 
         svg:hover {
-            fill: red;
+            transition: all .5s ease;
+            fill: white;
+            cursor:pointer;
           }
     }
 
@@ -169,6 +198,7 @@
             padding: 3%;
             img{
                 justify-self: center;
+                
             }
 
             input{

@@ -49,6 +49,18 @@
   color: white;
 }
 
+.testimonios .testimonios__start {
+  display: inline;
+  width: 15px;
+  margin: 0px;
+  padding: 0px;
+  fill: #d42404;
+}
+
+.testimonios .testimonios_icono {
+  fill: #870e06;
+}
+
 .Dates input, .Dates select {
   width: 80%;
   height: 40px;
@@ -112,14 +124,37 @@
   transition: all .5s ease;
   padding: 4%;
   border-radius: 15%;
+  opacity: 0.65;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.habitaciones .grid__gallery .gallery__item img:hover {
+  opacity: 1;
 }
 
 .Filters {
-  padding: 3%;
+  height: 200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Filters svg {
+  display: inline-block;
+  fill: rgba(212, 161, 161, 0.8);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 40px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Filters svg:hover {
-  fill: red;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  fill: white;
+  cursor: pointer;
 }
 
 .rooms div {
