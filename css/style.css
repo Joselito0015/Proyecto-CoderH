@@ -28,7 +28,7 @@
   border-right: 3px rgba(40, 40, 40, 0.35) solid;
 }
 
-.button--Elegant, .Dates input, .Dates select, .Carousel input, .habitaciones .grid__gallery .gallery__item input, .rooms div input {
+.button--Elegant, .Dates input, .Dates select, .Carousel input, .habitaciones .grid__gallery .gallery__item input, .rooms div input, .formulario input, .formulario select, .formulario textarea {
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 2rem;
@@ -42,7 +42,7 @@
   transition: all .5s ease;
 }
 
-.button--Elegant:hover, .Dates input:hover, .Dates select:hover, .Carousel input:hover, .habitaciones .grid__gallery .gallery__item input:hover, .rooms div input:hover {
+.button--Elegant:hover, .Dates input:hover, .Dates select:hover, .Carousel input:hover, .habitaciones .grid__gallery .gallery__item input:hover, .rooms div input:hover, .formulario input:hover, .formulario select:hover, .formulario textarea:hover {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   background-color: #7a1101;
@@ -179,6 +179,17 @@
 .information .information__column2 .information__map {
   padding: 3%;
   width: 100%;
+}
+
+.formulario Label {
+  color: white;
+}
+
+.formulario input, .formulario select, .formulario textarea {
+  padding: 10px;
+  margin: 3px;
+  height: auto;
+  width: auto;
 }
 
 footer {
