@@ -195,7 +195,9 @@ footer {
 
 @media screen and (max-width: 780px) {
   footer {
-    overflow: visible;
+    margin: 0px;
+    height: auto;
+    overflow: hidden;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -231,7 +231,9 @@
 
 
         footer{
-            overflow:visible;
+            margin:0px;
+            height: auto;
+            overflow:hidden;
             justify-content:center;
             align-items:initial;
             gap:5px;
