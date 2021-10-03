@@ -18,20 +18,64 @@
 }
 
 .glass, .testimonios, .Dates, .Video, .Carousel, .habitaciones, .Filters, .aboutUs, .rooms, .information, .formulario {
-  -webkit-backdrop-filter: blur(5spx);
-          backdrop-filter: blur(5spx);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   background-color: rgba(26, 31, 26, 0.5);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
           box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 3px rgba(255, 255, 255, 0.4) solid;
+  border: 3px rgba(255, 255, 255, 0.2) solid;
   border-bottom: 3px rgba(40, 40, 40, 0.35) solid;
   border-right: 3px rgba(40, 40, 40, 0.35) solid;
+}
+
+.button--Elegant, .Dates input, .Dates select, .Carousel input, .habitaciones .grid__gallery .gallery__item input, .rooms div input {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  height: 50%;
+  width: 50%;
+  border-radius: 30px;
+  border: 0px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.button--Elegant:hover, .Dates input:hover, .Dates select:hover, .Carousel input:hover, .habitaciones .grid__gallery .gallery__item input:hover, .rooms div input:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-color: #7a1101;
+  color: white;
+}
+
+.Dates input, .Dates select {
+  width: 80%;
+  height: 40px;
+  text-align: center;
+}
+
+.Dates input option, .Dates select option {
+  color: black;
 }
 
 .Video video {
   padding: 3%;
   border-radius: 120px;
   width: 70vw;
+}
+
+.Carousel .flexContainer {
+  justify-items: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Carousel .flexContainer img {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .habitaciones .grid__gallery {
@@ -50,7 +94,12 @@
   display: grid;
   -ms-grid-columns: (3)[auto];
       grid-template-columns: repeat(auto, 3);
-  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,16 +111,35 @@
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   padding: 4%;
-}
-
-.habitaciones .grid__gallery .gallery__item input {
-  margin: 2rem;
-  background-color: aliceblue;
-  border: 0px;
+  border-radius: 15%;
 }
 
 .Filters {
   padding: 3%;
+}
+
+.Filters svg:hover {
+  fill: red;
+}
+
+.rooms div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-row: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3%;
+}
+
+.rooms div img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.rooms div input {
+  width: 30%;
 }
 
 .information {
@@ -113,7 +181,31 @@
   width: 100%;
 }
 
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  height: 20vh;
+}
+
 @media screen and (max-width: 780px) {
+  footer {
+    overflow: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
   .habitaciones .grid__gallery {
     display: -ms-grid;
     display: grid;
@@ -128,8 +220,14 @@
     transition: all .5s ease;
   }
   .habitaciones .grid__gallery .gallery__item input {
-    margin: 0%;
-    background-color: bisque;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 50%;
+    width: 30%;
+    border-radius: 30px;
+    border: 0px;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }

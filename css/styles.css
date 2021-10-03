@@ -318,9 +318,7 @@ form{
         row-gap:20px;
     }
 
-    grid__gallery{
-        grid-template-columns: repeat(2,auto);
-    }
+
 
 }
 

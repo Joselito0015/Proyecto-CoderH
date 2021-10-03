@@ -13,17 +13,34 @@
     }
 
     .glass{
-        backdrop-filter: blur(5spx);
-        
+        backdrop-filter: blur(2px);
         background-color: rgba(26, 31, 26, 0.50);
         box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-        border: 3px rgba(255,255,255,0.4) solid;
+        border: 3px rgba(255,255,255,0.2) solid;
         border-bottom: 3px rgba(40,40,40,0.35) solid;
         border-right: 3px rgba(40,40,40,0.35) solid;
     
     }
 
 
+    .button--Elegant{
+        justify-self: center;
+        margin:2rem;
+        background-color:rgba(255, 255, 255, 0.6);
+        color:white;
+        height: 50%;
+        width: 50%;
+        border-radius:  30px;
+        border: 0px;
+        transition: all .5s ease;
+    }
+
+    .button--Elegant:hover{
+        transition: all .5s ease;
+        background-color: rgb(122,17,0.8);
+        color:white;
+    
+    }
 
 
     //blocks
@@ -36,6 +53,21 @@
     .Dates {
         @extend .glass;
         @extend .size;
+
+        & .Dates__items{
+
+        }
+
+        input, select{
+            @extend .button--Elegant;
+            width: 80%;
+            height: 40px;
+            text-align: center;
+            option{
+            color: black;
+            }
+        }
+     
 
     }
 
@@ -54,6 +86,18 @@
         @extend .glass;
         @extend .size;
         @extend .positions;
+        input{
+            @extend .button--Elegant;
+        }
+        & .flexContainer{
+            justify-items: center;
+            text-align: center;
+            align-items: center;
+            img{
+                justify-self: center;
+ 
+            }
+        }
     }
 
     .navbar{
@@ -64,7 +108,6 @@
     .habitaciones{
         @extend .glass;
         @extend .size;
-        
         & .grid__gallery{
             display:grid;
             grid-template-columns: repeat(3,auto);
@@ -75,21 +118,23 @@
             & .gallery__item{
                 display:grid;
                 grid-template-columns: repeat(auto,3); 
-                text-align: center;
+                justify-content: space-evenly;
+                justify-items: center;
+                align-content: space-evenly;
                 align-items: center;
-                
                 img {
                     width: 100%;
                     height: 100%;
                     transition: all .5s ease;
                     padding:4%;
+                    border-radius: 15%;
+                    
                 }
-
                 input{
-                    margin:2rem;
-                    background-color:aliceblue;
-                    border:0px;
+                    @extend .button--Elegant;
                 }
+           
+
             }
         }
     }
@@ -99,6 +144,10 @@
         @extend .size;
         @extend .positions;
         padding:3%;
+
+        svg:hover {
+            fill: red;
+          }
     }
 
     .aboutUs{
@@ -112,7 +161,22 @@
         @extend .glass;
         @extend .size;
         @extend .positions;
+        div{
+            width: 100%;
+            display: grid;
+            grid-row: auto;
+            align-items: center;
+            padding: 3%;
+            img{
+                justify-self: center;
+            }
 
+            input{
+                @extend .button--Elegant;
+                width: 30%;
+            }
+
+        }
     }
 
     .information{
@@ -154,9 +218,25 @@
     }
 
 
+    footer{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 20vh;
+    }
 
     
     @media  screen and  (max-width: 780px){   
+
+
+        footer{
+            overflow: hidden;
+            justify-content:center;
+            align-items:center;
+            width: 100vw;
+            grid-template-columns: repeat(3,auto);
+        }
         .habitaciones{ 
             & .grid__gallery{
             display:grid;
@@ -169,8 +249,13 @@
                     transition: all .5s ease;
                 }
                 input{
-                    margin:0%;
-                    background-color:bisque;
+                    justify-self: center;
+                    margin:2rem;
+                    background-color:rgba(255, 255, 255, 0.7);
+                    height: 50%;
+                    width: 30%;
+                    border-radius:  30px;
+                    border: 0px;
                     transition: all .5s ease;
                 }
             }
@@ -201,6 +286,8 @@
 
         .rooms{
             flex-direction: column;
+            
+           
         }
     }
 
