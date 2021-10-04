@@ -48,9 +48,6 @@ opacity: 0.80;
 body{
 background-image: url("../media/imagenes/CITY3.jpg");
    background-color: Red; 
-   /* background: rgb(2,0,36);
-   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,19,1) 57%, rgba(115,0,255,1) 100%);  */
-
    background-position: center; /* Center the image */
    background-repeat: no-repeat; /* Do not repeat the image */
    background-size: cover; /* Resize the background image to cover the entire container */
@@ -276,10 +273,6 @@ form{
         align-content:center;
         row-gap:20px;
     }
-
-    
-
-
     
 }
 
