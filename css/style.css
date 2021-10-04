@@ -49,16 +49,20 @@
   color: white;
 }
 
+.banner p {
+  text-align: center;
+}
+
 .testimonios .testimonios__start {
   display: inline;
   width: 15px;
   margin: 0px;
   padding: 0px;
-  fill: #d42404;
+  fill: #c2b16e;
 }
 
 .testimonios .testimonios_icono {
-  fill: #870e06;
+  fill: #c2b16e;
 }
 
 .Dates input, .Dates select {
@@ -252,8 +256,8 @@ footer {
             align-items: initial;
     gap: 5px;
     width: 100vw;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
     padding-top: 5%;
   }
   footer a {

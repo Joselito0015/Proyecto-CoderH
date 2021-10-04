@@ -14,7 +14,12 @@
 
 /* Colors*/
 li, h2,h3 {
-color:#957943;   
+color:#E8D896;   
+}
+
+P{
+    text-align: justify;
+    text-justify:inter-word;
 }
 
 a, p {

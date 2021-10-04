@@ -43,7 +43,15 @@
     }
 
 
+    
+
     //blocks
+    .banner{
+        p{
+        text-align: center;
+        }   
+    }
+    
     .testimonios{
         @extend .glass;
         @extend .size;
@@ -53,11 +61,11 @@
             width: 15px;
             margin:0px;
             padding:0px;
-            fill:rgb(212,36,4);
+            fill: #c2b16e;
 
         }
         & .testimonios_icono{
-            fill: rgb(135,14,6)
+            fill: #c2b16e;
         }
     }
 
@@ -65,9 +73,6 @@
         @extend .glass;
         @extend .size;
 
-        & .Dates__items{
-
-        }
 
         input, select{
             @extend .button--Elegant;
@@ -280,7 +285,7 @@
             align-items:initial;
             gap:5px;
             width: 100vw;
-            grid-template-columns: repeat(3,auto);
+            grid-template-columns: repeat(1,auto);
             padding-top: 5%;
             a{
                 font-size:15px;
